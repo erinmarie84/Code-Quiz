@@ -1,30 +1,31 @@
-//Create a variable that connects with the startBtn in the HTML
+//Create variables that connect with the buttons created in the HTML
 var startButton = document.getElementById('startBtn');
 var questionText = document.getElementById('question');
 var buttonOne = document.getElementById('btn1');
 var buttonTwo = document.getElementById('btn2');
 var buttonThree = document.getElementById('btn3');
+var answers = document.querySelector('#answerButtons')
+var userAnswer = '';
+var numCorrect = 0;
 
 var currentQuestion = 0;
 var timer = document.getElementById('timer')
 //Create a variable that shows how many seconds the user has 
 var countDown = 30;
-//var totalTime = myQuestions.length * countDown;
-//var timerId;
 
-
-    //set interval here
-
-
-//function timeTracker(){
-    //decrease total time by one
-    //timer.innerHTML = countDown;
-    
-    // once total time gets to zero stop game 
+// once total time gets to zero stop game 
     
 startButton.addEventListener('click', startGame);
+ answers.addEventListener('click', function(event){
+    
+     if(event.target.tagName === 'correctAnswer'){
+        numCorrect++;
+    }
+});
+    for(var i=0; i<question.length; i++){
+        userAnswer = (correctAnswer[i].querySelector(answers, 'clicked'))
+    }
 
-//startButton.addEventListener('click', function () {
     function timer() {
         var time = setInterval(function () {
 
@@ -38,13 +39,10 @@ startButton.addEventListener('click', startGame);
         }, 1000)
 
     }
-    //timer();
 
-    
-
-    
-
-    //User chooses A,B, or C and when user clicks on answer the computer recognizes which answer is chosen. If answer is correct prompts user correct. If answer is wrong deducts 10 seconds from timer. Moves on to next question. When game is over user should be able to save initials and score and re-start game if user chooses. 
+    function startGame() {
+        nextQuestion()
+    };
 
 
     function nextQuestion() {
@@ -95,11 +93,9 @@ startButton.addEventListener('click', startGame);
         }
     ];
 
-    function startGame() {
-        nextQuestion()
-    }
-
     
+
+
 
 
 
