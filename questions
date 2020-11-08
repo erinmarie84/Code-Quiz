@@ -1,0 +1,64 @@
+    var questionArray = [{
+        question: 'What does HTML stand for?',
+        answers: {
+            choicea: 'Hyper Texting Markup Language',
+            choiceb: 'Hyper Text Markup Language',
+            choicec: 'Hyper Talk Marking Language',
+            choiced: 'Hello To Mother Land',
+        },
+        correctAnswer: 'Hyper Text Markup Language',
+    },
+    {
+        question: 'How do you call a function?',
+        answers: {
+            choicea: 'Using { } brackets',
+            choiceb: 'Using [ ] brackets',
+            choicec: 'Just call it on the phone',
+            choiced: 'You do not actually call functions',
+        },
+        correctAnswer: 'Using { } brackets',
+    },
+    {
+        question: 'What does CSS stand for?',
+        answers: {
+            choicea: 'Cascading Single Sheets',
+            choiceb: 'Cascading Style Sheets',
+            choicec: 'Cascading Styling Sheet',
+            choiced: 'Cannot Style Sheep',
+        },
+        correctAnswer: 'Cascading Style Sheets',
+    },
+    {
+        question: 'What do you use to declare an array?',
+        answers: {
+            choicea: '{ }',
+            choiceb: ' " " ',
+            choicec: '[ ]',
+            choiced: '``',
+        },
+        correctAnswer: '[ ]',
+    
+    },
+    {
+        question: 'Which is the proper way to use camel case?',
+        answers: {
+            choicea: 'CamelCase',
+            choiceb: 'Camel-Case',
+            choicec: 'Camel_Case',
+            choiced: 'camelCase',
+        },
+        correctAnswer: 'camelCase',
+    
+    },
+    {
+        question: 'What do you call a flock of crows?',
+        answers: {
+            choicea: 'Murder',
+            choiceb: 'Craven',
+            choicec: 'Creepy',
+            choiced: 'Flock, duh',
+        },
+        correctAnswer: 'Murder',
+        
+    
+    }];

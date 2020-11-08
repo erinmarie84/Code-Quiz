@@ -1,23 +1,21 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
     font-family: monospace;
-}
+} */
 
-body{
+.container {
 
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
     width: 800px;
     max-width: 80%;
+    position: relative;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
 }
 
-.btn-grid{
+
+.btn-grid {
+
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
@@ -25,15 +23,19 @@ body{
 }
 
 
-.startBtn{
+.startBtn {
+
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
     color: black;   
 }
 
-#question{
+#question {
 
+    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -42,33 +44,30 @@ body{
 
 }
 
-h1 {
-    font-family: monospace;
-    font-size: 50px;
-    text-align: center;
+#paragraph {
 
-
-}
-
-h2 {
-
-    font-size: 15px;
     text-align: center;
 }
 
 #startBtn {
 
+    display: grid;
     background-color: darkgray;
     text-align: center;
+    width: 25%;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
 }
 
-.buttons {
+.answerButtons {
 
     margin-top: 30px;
 }
 
-#btn1, #btn2, #btn3, #btn4 {
+#btnA, #btnB, #btnC, #btnD {
 
+    display: inline-block;
     background-color: lightslategrey;
     width: 250px;
     height: 50px;
